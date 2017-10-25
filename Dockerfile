@@ -6,7 +6,7 @@ RUN echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >
 RUN apt-get update
 RUN apt-get -y install libasound2 libcairo2 libcups2 libatk1.0-0 gconf-service libgconf-2-4 libglib2.0-0 libgdk-pixbuf2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libxss1 libnss3 lsb-release libnss3 xdg-utils fonts-liberation libappindicator1
 RUN apt-get -y install google-chrome-stable
-RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_7.x | bash -
 RUN apt-get install -y nodejs
 RUN mkdir -p /tests
 COPY run_tests.sh /tests/run_tests.sh
