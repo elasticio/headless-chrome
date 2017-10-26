@@ -1,4 +1,4 @@
-FROM ubuntu:zesty
+FROM ubuntu:xenial
 RUN apt-get update
 RUN apt-get -y upgrade
 RUN apt-get -y install curl
